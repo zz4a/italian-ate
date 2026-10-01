@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #FAF6F0;
+    --bg-surface: #FFFDF9;
+    --bg-surface-variant: #EFE6D8;
+    --text-primary: #1C1613;
+    --text-secondary: #52443C;
+    --accent-terracotta: #C85A32;
+    --accent-olive: #4A5D23;
+    --accent-gold: #D4AF37;
+    --border-color: #E2D5C3;
+  }
+
+  .dark {
+    --bg-primary: #121312;
+    --bg-surface: #1E1B18;
+    --bg-surface-variant: #2B2622;
+    --text-primary: #F5EBE1;
+    --text-secondary: #BAAE9E;
+    --accent-terracotta: #E07A5F;
+    --accent-olive: #A3C067;
+    --accent-gold: #F3CC5B;
+    --border-color: #38332E;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom Italian Culinary Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(200, 90, 50, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(200, 90, 50, 0.6);
+}
